@@ -259,8 +259,8 @@ haspgp=`which gpg2 2> /dev/null`
 if [ -z "${haspgp}" ]; then
 	echo "Cannot create PGP signature (pgp not installed)." >&2
 else
-	echo "Create PGP signature..."
-	gpg2 -sab -o ${DIST_PARENT}/savapage.asc ${DIST_SFX}
+	#echo "Create PGP signature..."
+	#gpg2 -sab -o ${DIST_PARENT}/savapage.asc ${DIST_SFX}
 fi
 
 # end-of-file
