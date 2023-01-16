@@ -1,0 +1,31 @@
+name: Build Savapage
+
+on:
+  push:
+    branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Download package lists
+      run: sudo apt update
+
+    - name: Install dependencies
+      run: sudo apt install -y openjdk-8-jdk maven g++ make pkg-config zip libcups2-dev libpam0g-dev cups-ppdc
+
+    - name: Build
+      run: make all
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: savapage-install.bin
+        # A file, directory or wildcard pattern that describes what to upload
+        path: target/savapage-setup-*-linux-x64.bin
