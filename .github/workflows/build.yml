@@ -12,7 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout project
+      uses: actions/checkout@v3
+      with:
+        submodules: 'recursive'
 
     - name: Download package lists
       run: sudo apt update
