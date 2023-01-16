@@ -1,12 +1,15 @@
 <!-- 
-    SPDX-FileCopyrightText: 2011-2020 Datraverse BV <info@datraverse.com> 
+    SPDX-FileCopyrightText: 2011-2020 Datraverse BV <info@datraverse.com>
+    SPDX-FileCopyrightText: 2023 Aaron Dewes <aaron@runcitadel.space>
     SPDX-License-Identifier: AGPL-3.0-or-later 
 -->
 
-# savapage-make
-    
-Environment used by [Development Partners](https://wiki.savapage.org/doku.php?id=roles) to produce SavaPage.
- 
+# Savapage (Kant-Build)
+
+Eine leicht veränderte Version von Savapage für das IKGP.
+
+---
+
 ### License
 
 This module is part of the SavaPage project <https://www.savapage.org>,
