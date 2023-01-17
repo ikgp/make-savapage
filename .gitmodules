@@ -18,7 +18,7 @@
 	url = https://gitlab.com/savapage-i18n/savapage-i18n-en
 [submodule "repos/savapage-server"]
 	path = repos/savapage-server
-	url = https://gitlab.com/savapage/savapage-server
+	url = https://github.com/ikgp/savapage-server
 [submodule "repos/savapage-nss"]
 	path = repos/savapage-nss
 	url = https://gitlab.com/savapage/savapage-nss
