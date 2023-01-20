@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       uses: awalsh128/cache-apt-pkgs-action@latest
       with:
-        packages: 0openjdk-8-jdk maven g++ make pkg-config zip libcups2-dev libpam0g-dev cups-ppdc
+        packages: openjdk-8-jdk maven g++ make pkg-config zip libcups2-dev libpam0g-dev cups-ppdc
         version: 1.0
 
     - name: Build
